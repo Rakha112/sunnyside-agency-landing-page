@@ -71,6 +71,7 @@ a {
 
 .container .navbar img {
   height: 100%;
+  cursor: pointer;
 }
 
 .container .home {

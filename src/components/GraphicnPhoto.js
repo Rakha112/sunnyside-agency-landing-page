@@ -1,7 +1,6 @@
 import React from 'react'
 
 const GraphicnPhoto = (props) => {
-    console.log(props)
     return (
         <>{
             props.dataG.map((data_G) => {

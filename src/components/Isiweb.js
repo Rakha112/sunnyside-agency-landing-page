@@ -1,6 +1,7 @@
 import React from 'react';
 import More from './More';
 import GraphicnPhoto from './GraphicnPhoto'
+import Testi from './Testi'
 import img1 from '../images/mobile/image-transform.jpg'
 import img2 from '../images/mobile/image-stand-out.jpg'
 import graphic from '../images/mobile/image-graphic-design.jpg'
@@ -43,6 +44,7 @@ const dataGraphicnPhoto = [
     <>
       <More dataMore={datamore}/>
       <GraphicnPhoto dataG={dataGraphicnPhoto}/>
+      <Testi/>
     </>
   );
 }
