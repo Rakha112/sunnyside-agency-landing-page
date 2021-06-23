@@ -9,6 +9,7 @@
 
 body {
   font-size: 1.125rem;
+  background-color: #fffcfa;
 }
 
 .container {
@@ -74,5 +75,79 @@ body {
   font-size: 2.5rem;
   margin-bottom: 3.125rem;
   padding-top: 9rem;
+}
+
+.container .home img {
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.container .home img:hover {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+.container .more {
+  text-align: center;
+}
+
+.container .more img {
+  width: 100%;
+}
+
+.container .more .isi_more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 4rem 1.5rem;
+}
+
+.container .more .isi_more h2 {
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+
+.container .more .isi_more p {
+  color: #818498;
+  font-family: 'Barlow', sans-serif;
+  padding-bottom: 2rem;
+}
+
+.container .more .isi_more a {
+  z-index: 1;
+  font-family: 'Fraunces', serif;
+  text-decoration: none;
+  color: black;
+}
+
+.container .more .isi_more .transform {
+  z-index: 0;
+  background-color: #fad400;
+  height: 10px;
+  width: 136px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 4rem;
+}
+
+.container .more .isi_more .stand {
+  z-index: 0;
+  background-color: #fe7867;
+  height: 10px;
+  width: 136px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 4rem;
 }
 /*# sourceMappingURL=index.css.map */

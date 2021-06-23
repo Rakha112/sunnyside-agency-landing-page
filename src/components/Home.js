@@ -1,5 +1,4 @@
 import React from 'react'
-import image_header from '../images/mobile/image-header.jpg'
 import arrow from '../images/icon-arrow-down.svg'
 const Home = () => {
     return (

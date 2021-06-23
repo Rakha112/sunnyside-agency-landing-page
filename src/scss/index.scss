@@ -8,7 +8,7 @@
 
 body {
     font-size: 1.125rem;
-    // background-color: beige;
+    background-color: hsl(26, 100%, 99%);
 }
 .container {
     min-height: 100vh;
@@ -54,6 +54,63 @@ body {
             font-size: 2.5rem;
             margin-bottom: 3.125rem;
             padding-top: 9rem;
+        }
+        img {
+            cursor: pointer;
+            transition: 0.5s all ease;
+        }
+        img:hover {
+            transform: translateY(2rem);
+        }
+    }
+    .more {
+
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        .isi_more {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 4rem 1.5rem;
+            h2 {
+                font-size: 2rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                padding-bottom: 1.5rem;
+            }
+            p {
+                color: $Dark_grayish_blue;
+                font-family: 'Barlow', sans-serif;
+                padding-bottom: 2rem;
+            }
+            a {
+                z-index: 1;
+                font-family: 'Fraunces', serif;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .transform {
+                z-index: 0;
+                background-color: $Yellow;
+                height: 10px;
+                width: 136px;
+                border-radius: 5px;
+                position: absolute;
+                bottom: 4rem;
+            }
+            .stand {
+                z-index: 0;
+                background-color: $Soft_red;
+                height: 10px;
+                width: 136px;
+                border-radius: 5px;
+                position: absolute;
+                bottom: 4rem;
+            }
         }
     }
 }
