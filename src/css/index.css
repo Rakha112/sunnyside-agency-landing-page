@@ -122,6 +122,8 @@ body {
   color: #818498;
   font-family: 'Barlow', sans-serif;
   padding-bottom: 2rem;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 .container .more .isi_more a {
@@ -132,6 +134,7 @@ body {
 }
 
 .container .more .isi_more .transform {
+  opacity: 0.3;
   z-index: 0;
   background-color: #fad400;
   height: 10px;
@@ -142,6 +145,7 @@ body {
 }
 
 .container .more .isi_more .stand {
+  opacity: 0.3;
   z-index: 0;
   background-color: #fe7867;
   height: 10px;
