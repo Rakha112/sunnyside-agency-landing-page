@@ -12,6 +12,32 @@ body {
   background-color: #fffcfa;
 }
 
+h2 {
+  color: #23303e;
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  color: #818498;
+  font-family: 'Barlow', sans-serif;
+  padding-bottom: 2rem;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+a {
+  letter-spacing: 1px;
+  color: #23303e;
+  z-index: 1;
+  font-size: 1rem;
+  font-family: 'Fraunces', serif;
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   min-height: 100vh;
   position: relative;
@@ -89,6 +115,13 @@ body {
 }
 
 .container .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -111,28 +144,6 @@ body {
   padding: 4rem 1.5rem;
 }
 
-.container .more .isi_more h2 {
-  font-size: 2rem;
-  font-family: 'Fraunces', serif;
-  font-weight: 900;
-  padding-bottom: 1.5rem;
-}
-
-.container .more .isi_more p {
-  color: #818498;
-  font-family: 'Barlow', sans-serif;
-  padding-bottom: 2rem;
-  line-height: 1.7;
-  font-size: 18px;
-}
-
-.container .more .isi_more a {
-  z-index: 1;
-  font-family: 'Fraunces', serif;
-  text-decoration: none;
-  color: black;
-}
-
 .container .more .isi_more .transform {
   opacity: 0.3;
   z-index: 0;
@@ -153,5 +164,36 @@ body {
   border-radius: 5px;
   position: absolute;
   bottom: 4rem;
+}
+
+.container .graphicnphoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+
+.container .graphicnphoto img {
+  width: 100%;
+}
+
+.container .graphicnphoto .isi_graphicnphoto {
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.container .graphicnphoto .isi_graphicnphoto h2 {
+  font-size: 1.75rem;
+  color: #25564b;
+}
+
+.container .graphicnphoto .isi_graphicnphoto p {
+  font-size: 1rem;
+  padding-bottom: 3.75rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  color: #19536b;
 }
 /*# sourceMappingURL=index.css.map */

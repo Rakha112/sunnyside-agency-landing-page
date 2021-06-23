@@ -10,6 +10,31 @@ body {
     font-size: 1.125rem;
     background-color: hsl(26, 100%, 99%);
 }
+
+h2 {
+    color: $Very_dark_desaturated_blue;
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+}
+p {
+    color: $Dark_grayish_blue;
+    font-family: 'Barlow', sans-serif;
+    padding-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 18px;
+}
+a {
+    letter-spacing: 1px;
+    color: $Very_dark_desaturated_blue;
+    z-index: 1;
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     min-height: 100vh;
     position: relative;
@@ -64,7 +89,8 @@ body {
         }
     }
     .more {
-
+        display: flex;
+        flex-direction: column;
         text-align: center;
         img {
             width: 100%;
@@ -75,25 +101,7 @@ body {
             align-items: center;
             position: relative;
             padding: 4rem 1.5rem;
-            h2 {
-                font-size: 2rem;
-                font-family: 'Fraunces', serif;
-                font-weight: 900;
-                padding-bottom: 1.5rem;
-            }
-            p {
-                color: $Dark_grayish_blue;
-                font-family: 'Barlow', sans-serif;
-                padding-bottom: 2rem;
-                line-height: 1.7;
-                font-size: 18px;
-            }
-            a {
-                z-index: 1;
-                font-family: 'Fraunces', serif;
-                text-decoration: none;
-                color: black;
-            }
+            
             
             .transform {
                 opacity: 0.3;
@@ -114,6 +122,31 @@ body {
                 border-radius: 5px;
                 position: absolute;
                 bottom: 4rem;
+            }
+        }
+    }
+
+    .graphicnphoto {
+        display: flex;
+        text-align: center;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .isi_graphicnphoto {
+            bottom: 0;
+            z-index: 1;
+            position: absolute;
+            h2 {
+                font-size: 1.75rem;
+                color: $Dark_desaturated_cyan;
+            }
+            p {
+                font-size: 1rem;
+                padding-bottom: 3.75rem;
+                padding-right: 1.25rem;
+                padding-left: 1.25rem;
+                color: $Dark_blue;
             }
         }
     }
