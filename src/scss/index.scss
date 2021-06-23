@@ -1,0 +1,60 @@
+@import "property";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    // background-color: beige;
+}
+.container {
+    min-height: 100vh;
+    position: relative;
+    .navbar {
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        padding: 2rem 1.5rem 0 1.5rem;
+        justify-content: space-between;
+        ul {
+            display: none;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $White;
+                }
+            }
+        }
+        img {
+            height: 100%;
+        }
+    }
+    .home {
+        display: flex;
+
+        align-items: center;
+        flex-direction: column;
+        background-image: url('../images/mobile/image-header.jpg');
+        background-size: cover;
+        height: 33.625rem;
+        position: relative;
+        z-index: 0;
+        h1 {
+            text-align: center;
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $White;
+            letter-spacing: 0.4rem;
+            font-size: 2.5rem;
+            margin-bottom: 3.125rem;
+            padding-top: 9rem;
+        }
+    }
+}
+
