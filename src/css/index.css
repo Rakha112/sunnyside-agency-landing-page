@@ -154,8 +154,13 @@ a {
   cursor: pointer;
 }
 
-.container .home #bg {
+.container .home #bgM {
+  display: block;
   width: 100%;
+}
+
+.container .home #bgD {
+  display: none;
 }
 
 .container .home .isi_home {
@@ -209,8 +214,13 @@ a {
   text-align: center;
 }
 
-.container .more img {
+.container .more .imgM {
+  display: block;
   width: 100%;
+}
+
+.container .more .imgD {
+  display: none;
 }
 
 .container .more .isi_more {
@@ -250,18 +260,31 @@ a {
   bottom: 3.875rem;
 }
 
-.container .graphicnphoto {
+.container .wrap_graphicnphoto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .wrap_graphicnphoto .graphicnphoto {
   position: relative;
 }
 
-.container .graphicnphoto img {
+.container .wrap_graphicnphoto .graphicnphoto .imgM {
+  display: block;
   width: 100%;
 }
 
-.container .graphicnphoto .isi_graphicnphoto {
+.container .wrap_graphicnphoto .graphicnphoto .imgD {
+  display: none;
+}
+
+.container .wrap_graphicnphoto .graphicnphoto .isi_graphicnphoto {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,12 +303,12 @@ a {
   position: absolute;
 }
 
-.container .graphicnphoto .isi_graphicnphoto h2 {
+.container .wrap_graphicnphoto .graphicnphoto .isi_graphicnphoto h2 {
   font-size: 1.75rem;
   color: #25564b;
 }
 
-.container .graphicnphoto .isi_graphicnphoto p {
+.container .wrap_graphicnphoto .graphicnphoto .isi_graphicnphoto p {
   text-align: center;
   font-size: 1rem;
   padding-bottom: 3.75rem;
@@ -376,8 +399,12 @@ a {
   margin-top: 5.5rem;
 }
 
-.container .gallery img {
+.container .gallery .imgM {
   max-width: 100%;
+}
+
+.container .gallery .imgD {
+  display: none;
 }
 
 .container .footer {
@@ -438,5 +465,64 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 1000px) {
+  .container .home #bgM {
+    display: none;
+  }
+  .container .home #bgD {
+    display: block;
+    width: 100%;
+  }
+  .container #stand {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container .more {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .more .imgM {
+    display: none;
+  }
+  .container .more .imgD {
+    display: block;
+    width: 100%;
+  }
+  .container .wrap_graphicnphoto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .wrap_graphicnphoto .graphicnphoto .imgM {
+    display: none;
+  }
+  .container .wrap_graphicnphoto .graphicnphoto .imgD {
+    display: block;
+    width: 100%;
+  }
+  .container .testi .card_testi {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .gallery {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .container .gallery .imgM {
+    display: none;
+  }
+  .container .gallery .imgD {
+    display: block;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

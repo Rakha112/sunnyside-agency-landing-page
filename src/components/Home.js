@@ -1,13 +1,15 @@
 import React from 'react'
 import arrow from '../images/icon-arrow-down.svg'
-import bg from '../images/mobile/image-header.jpg'
+import bgM from '../images/mobile/image-header.jpg'
+import bgD from '../images/desktop/image-header.jpg'
 import Navbar from './Navbar';
 import { Link } from "react-scroll";
 const Home = () => {
     return (
         <div className="home">
             <Navbar />
-            <img id="bg"src={bg} alt="" />
+            <img id="bgM"src={bgM} alt="" />
+            <img id="bgD"src={bgD} alt="" />
             <div className="isi_home">
                 <h1>we are creatives</h1>
                 <Link
