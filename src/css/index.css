@@ -67,25 +67,27 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .container .home .navbar {
   z-index: 2;
   width: 100%;
+  position: absolute;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.container .home .navbar .wrapper {
+  width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  padding: 2rem 1.5rem 0 1.5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.container .home .navbar .aktif {
+.container .home .navbar .wrapper .aktif {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +97,7 @@ a {
           transform: translateY(0);
 }
 
-.container .home .navbar ul {
+.container .home .navbar .wrapper ul {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
   padding: 2.5rem 0;
@@ -103,7 +105,7 @@ a {
   margin-top: 4.5rem;
   position: absolute;
   text-align: center;
-  width: 87%;
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   -webkit-box-orient: vertical;
@@ -114,7 +116,7 @@ a {
   transition: 0.5s all ease;
 }
 
-.container .home .navbar ul #arrow-left {
+.container .home .navbar .wrapper ul #arrow-left {
   top: -2rem;
   right: 0;
   position: absolute;
@@ -125,29 +127,29 @@ a {
   border-right: 50px solid white;
 }
 
-.container .home .navbar ul li {
+.container .home .navbar .wrapper ul li {
   list-style: none;
   margin-bottom: 2.5rem;
 }
 
-.container .home .navbar ul li a {
+.container .home .navbar .wrapper ul li a {
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
   text-decoration: none;
   color: #5a636c;
 }
 
-.container .home .navbar ul li .contact {
+.container .home .navbar .wrapper ul li .contact {
   background-color: #fad400;
   padding: 20px 26px;
   border-radius: 28px;
 }
 
-.container .home .navbar ul .li_con {
+.container .home .navbar .wrapper ul .li_con {
   margin-bottom: 1rem;
 }
 
-.container .home .navbar img {
+.container .home .navbar .wrapper img {
   height: 100%;
   cursor: pointer;
 }

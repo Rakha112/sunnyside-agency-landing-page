@@ -49,68 +49,70 @@ a {
         flex-direction: column;
         // height: 33.625rem;
         position: relative;
-        flex: 1;
         .navbar {
             z-index: 2;
             width: 100%;
-            display: flex;
             position: absolute;
             padding: 2rem 1.5rem 0 1.5rem;
-            justify-content: space-between;
-            
-            
-            .aktif {
+            .wrapper {
+                width: 100%;
+                position: relative;
                 display: flex;
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-            ul {
-                transform: translateY(-50px);
-                padding: 2.5rem 0;
-                background-color: $White;
-                margin-top: 4.5rem;
-                position: absolute;
-                text-align: center;
-                width: 87%;
-                opacity: 0;
-                visibility: hidden;
-                flex-direction: column;
-                transition: 0.5s all ease;
-                #arrow-left {
-                    top: -2rem;
-                    right: 0;
+                justify-content: space-between;
+                .aktif {
+                    display: flex;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+                ul {
+                    
+                    transform: translateY(-50px);
+                    padding: 2.5rem 0;
+                    background-color: $White;
+                    margin-top: 4.5rem;
                     position: absolute;
-                    width: 0; 
-                    height: 0; 
-                    border-top: 50px solid transparent;
-                    border-bottom: 50px solid transparent; 
-                    border-right:50px solid $White; 
-                }
-                li {
-                    list-style: none;
-                    margin-bottom: 2.5rem;
-                    a {
-                        font-size: 18px;
-                        font-family: 'Barlow', sans-serif;
-                        text-decoration: none;
-                        color: $Very_dark_grayish_blue;
+                    text-align: center;
+                    width: 100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    flex-direction: column;
+                    transition: 0.5s all ease;
+                    #arrow-left {
+                        top: -2rem;
+                        right: 0;
+                        position: absolute;
+                        width: 0; 
+                        height: 0; 
+                        border-top: 50px solid transparent;
+                        border-bottom: 50px solid transparent; 
+                        border-right:50px solid $White; 
                     }
-                    .contact {
-                        
-                        background-color: $Yellow;
-                        padding: 20px 26px;
-                        border-radius:  28px;
-                        
+                    li {
+                        list-style: none;
+                        margin-bottom: 2.5rem;
+                        a {
+                            font-size: 18px;
+                            font-family: 'Barlow', sans-serif;
+                            text-decoration: none;
+                            color: $Very_dark_grayish_blue;
+                        }
+                        .contact {
+                            
+                            background-color: $Yellow;
+                            padding: 20px 26px;
+                            border-radius:  28px;
+                            
+                        }
+                    }
+                    .li_con {
+                        margin-bottom: 1rem;
                     }
                 }
-                .li_con {
-                    margin-bottom: 1rem;
+                img {
+                    height: 100%;
+                    cursor: pointer;
                 }
-            }
-            img {
-                height: 100%;
-                cursor: pointer;
             }
         }
         #bg {
