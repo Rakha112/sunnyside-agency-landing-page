@@ -264,10 +264,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container .wrap_graphicnphoto .graphicnphoto {
@@ -400,6 +400,7 @@ a {
 }
 
 .container .gallery .imgM {
+  display: block;
   max-width: 100%;
 }
 
@@ -504,7 +505,9 @@ a {
     display: none;
   }
   .container .wrap_graphicnphoto .graphicnphoto .imgD {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
   }
   .container .testi .card_testi {

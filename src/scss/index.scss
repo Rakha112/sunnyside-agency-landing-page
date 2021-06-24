@@ -193,7 +193,7 @@ a {
     }
     .wrap_graphicnphoto {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         .graphicnphoto {
             position: relative;
             .imgM {
@@ -284,6 +284,7 @@ a {
         max-width: 100%;
         margin-top: 5.5rem;
         .imgM {
+            display: block;
             max-width: 100%;
         }
         .imgD {
@@ -366,7 +367,7 @@ a {
                     display: none;
                 }
                 .imgD {
-                    display: block;
+                    display: flex;
                     width: 100%;
                 }
             }
