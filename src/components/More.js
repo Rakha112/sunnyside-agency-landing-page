@@ -5,7 +5,7 @@ const More = (props) => {
         <>{
             props.dataMore.map((data_More) => {
                 return (
-                    <div className="more" key={data_More.id}>
+                    <div className="more" id="more" key={data_More.id}>
                         <img src={data_More.img} alt="" />
                         <div className="isi_more">
                             <h2>{data_More.h2}</h2>

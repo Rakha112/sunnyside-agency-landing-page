@@ -29,22 +29,51 @@ p {
 }
 
 a {
+  font-weight: 900;
   letter-spacing: 1px;
   color: #23303e;
   z-index: 1;
-  font-size: 1rem;
+  font-size: 15px;
   font-family: 'Fraunces', serif;
   text-decoration: none;
   color: black;
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   position: relative;
 }
 
-.container .navbar {
-  z-index: 1;
+.container .home {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .home .navbar {
+  z-index: 2;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,43 +85,95 @@ a {
           justify-content: space-between;
 }
 
-.container .navbar ul {
-  display: none;
-}
-
-.container .navbar ul li {
-  list-style: none;
-}
-
-.container .navbar ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.container .navbar img {
-  height: 100%;
-  cursor: pointer;
-}
-
-.container .home {
+.container .home .navbar .aktif {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.container .home .navbar ul {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  padding: 2.5rem 0;
+  background-color: white;
+  margin-top: 4.5rem;
+  position: absolute;
+  text-align: center;
+  width: 327px;
+  opacity: 0;
+  visibility: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../images/mobile/image-header.jpg");
-  background-size: cover;
-  height: 33.625rem;
-  position: relative;
-  z-index: 0;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
-.container .home h1 {
+.container .home .navbar ul #arrow-left {
+  top: -2rem;
+  right: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid white;
+}
+
+.container .home .navbar ul li {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.container .home .navbar ul li a {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+  color: #5a636c;
+}
+
+.container .home .navbar ul li .contact {
+  background-color: #fad400;
+  padding: 20px 26px;
+  border-radius: 28px;
+}
+
+.container .home .navbar ul .li_con {
+  margin-bottom: 1rem;
+}
+
+.container .home .navbar img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.container .home #bg {
+  width: 100%;
+}
+
+.container .home .isi_home {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .home .isi_home h1 {
   text-align: center;
   font-family: 'Fraunces', serif;
   font-weight: 900;
@@ -104,13 +185,13 @@ a {
   padding-top: 9rem;
 }
 
-.container .home img {
+.container .home .isi_home #arrow {
   cursor: pointer;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
-.container .home img:hover {
+.container .home .isi_home #arrow:hover {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
 }
@@ -153,7 +234,7 @@ a {
   width: 136px;
   border-radius: 5px;
   position: absolute;
-  bottom: 4rem;
+  bottom: 3.875rem;
 }
 
 .container .more .isi_more .stand {
@@ -164,14 +245,13 @@ a {
   width: 136px;
   border-radius: 5px;
   position: absolute;
-  bottom: 4rem;
+  bottom: 3.875rem;
 }
 
 .container .graphicnphoto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   position: relative;
 }
 
@@ -180,6 +260,19 @@ a {
 }
 
 .container .graphicnphoto .isi_graphicnphoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   bottom: 0;
   z-index: 1;
   position: absolute;
@@ -191,10 +284,157 @@ a {
 }
 
 .container .graphicnphoto .isi_graphicnphoto p {
+  text-align: center;
   font-size: 1rem;
   padding-bottom: 3.75rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   color: #19536b;
+}
+
+.container .testi h3 {
+  padding-top: 4rem;
+  font-size: 1rem;
+  font-family: 'Fraunces', serif;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #a7abae;
+  text-transform: uppercase;
+}
+
+.container .testi .card_testi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .testi .card_testi .isi_testi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4.5rem;
+  padding: 0 1.5rem;
+}
+
+.container .testi .card_testi .isi_testi img {
+  text-align: center;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.container .testi .card_testi .isi_testi p {
+  text-align: center;
+  color: #5a636c;
+  font-size: 1.125rem;
+}
+
+.container .testi .card_testi .isi_testi h4 {
+  font-weight: 900;
+  text-align: center;
+  color: #23303e;
+  font-family: 'Fraunces', serif;
+  font-size: 1.125rem;
+}
+
+.container .testi .card_testi .isi_testi h5 {
+  font-size: .875rem;
+  text-align: center;
+  padding-top: 0.75rem;
+  font-family: 'Barlow', sans-serif;
+  color: #a7abae;
+}
+
+.container .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  margin-top: 5.5rem;
+}
+
+.container .gallery img {
+  max-width: 100%;
+}
+
+.container .footer {
+  padding-bottom: 4.75rem;
+  padding-top: 4.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #91d4c6;
+}
+
+.container .footer .logo {
+  width: 170px;
+  color: #25564b;
+  fill: #25564b;
+  margin-bottom: 2.5rem;
+}
+
+.container .footer .nav_butt {
+  margin-bottom: 5.5rem;
+}
+
+.container .footer .nav_butt ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .footer .nav_butt ul li {
+  list-style: none;
+}
+
+.container .footer .nav_butt ul li a {
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+  color: #458c7e;
+}
+
+.container .footer .nav_butt ul li .services {
+  padding: 0 3rem;
+}
+
+.container .footer .sosmed {
+  cursor: pointer;
+  width: 100%;
+  padding: 0 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=index.css.map */
