@@ -340,6 +340,273 @@ a {
 
 @media screen and (min-width: 1000px) {
     .container {
+        overflow-x: hidden;
+        .home {
+            .navbar {
+                padding: 0;
+                .wrapper {
+                    padding: 45px 50px 0 40px;
+                    justify-content: unset;
+                    .logo {
+                        position: relative;
+                        width: 170px;
+                        margin-right: 400px;
+                    }
+                    .ham {
+                        display: none;
+                    }
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
+                        padding: 0;
+                        margin-top: 45px;
+                        #arrow-left {
+                            display: none;
+                        }
+                        opacity: 1;
+                        visibility: visible;
+                        background-color: unset;
+                        flex-direction: row;
+                        li {
+                            list-style: none;
+                            margin-bottom: 0;
+                            a {
+                                font-size: 18px;
+                                font-family: 'Barlow', sans-serif;
+                                text-decoration: none;
+                                color: $White;
+                            }
+                            .contact {
+                                background-color: $White;
+                                padding: 20px 26px;
+                                border-radius:  30px;
+                                color: $Very_dark_grayish_blue;
+                            }
+                        }
+                        .li_con {
+  
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                
+            }
+            #bgM {
+                display: none; 
+            }
+            #bgD {
+                display: block;
+                width: 100%;
+            }
+            .isi_home {
+                h1 {
+                    font-size: 3.75rem;
+                    margin-bottom: 6rem;
+                    padding-top: 12.5rem;
+                }   
+            }
+        }
+        #transform {
+            .imgD {
+
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .isi_more {
+                grid-column: 1;
+            }
+        }
+        .more {
+            text-align: left;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .imgM {
+                display: none;
+            }
+            .imgD {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .isi_more {
+                align-items: unset;
+                padding: 0 2rem 0 5rem;
+                margin: auto;
+                h2 {
+                    font-size: 39px;
+                    padding-bottom: 40px;
+                }
+                p {
+                    padding-bottom: 46px;
+                    line-height: 1.7;
+                    font-size: 18px;
+                }
+                a {
+                    font-size: 15px;
+                }
+                .transform {
+                    bottom: -.125rem;
+                    left: 4.5rem;
+                }
+                .stand {
+                    bottom: -.125rem;
+                    left: 4.5rem;
+                }
+            }
+        }
+        .wrap_graphicnphoto {
+            width: 100%;
+            flex-direction: row;
+            .graphicnphoto {
+                width: 100%;
+                .imgM {
+                    display: none;
+                }
+                .imgD {
+                    display: block;
+                    width: 100%;
+                }
+                .isi_graphicnphoto {
+
+                    bottom: 0;
+                    z-index: 1;
+                    position: absolute;
+                    h2 {
+                        font-size: 1.75rem;
+                        color: $Dark_desaturated_cyan;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 1rem;
+                        padding-bottom: 2rem;
+                        padding-right: 5rem;
+                        padding-left: 5rem;
+                        color: $Dark_blue;
+                    }
+                }
+            }
+        }
+        .testi {
+            padding: 160px 170px;
+            h3 {
+                padding-top: 0;
+                font-size: 1.5rem;
+                font-family: 'Fraunces', serif;
+                text-align: center;
+                letter-spacing: 4px;
+                color: $Grayish_blue;
+                text-transform: uppercase;
+            }
+            .card_testi {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                #emily {
+                    padding-right: 2rem;
+                }
+                #jennie {
+                    padding-left: 1.5rem;
+                }
+                .isi_testi {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 4.5rem;
+                    padding: 0;
+                    img {
+                        text-align: center;
+                        width: 4.5rem;
+                        border-radius: 50%;
+                        margin-bottom: 3rem;
+                    }
+                    p {
+                        text-align: center;
+                        color: $Very_dark_grayish_blue;
+                        font-size: 1.125rem;
+                        padding-bottom: 4rem;
+                    }
+                    h4 {
+                        font-weight: 900;
+                        text-align: center;
+                        color: $Very_dark_desaturated_blue;
+                        font-family: 'Fraunces', serif;
+                        font-size: 1.125rem;
+                    }
+                    h5 {
+                        font-size: .875rem;
+                        text-align: center;
+                        padding-top: 0.75rem;
+                        font-family: 'Barlow', sans-serif;
+                        color: $Grayish_blue;
+                    }
+                }
+            }
+        }
+        .gallery {
+            margin-top: 0;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .imgM {
+                display: none;
+            }
+            .imgD {
+                display: block;
+                max-width: 100%;
+            }
+        }
+        .footer {
+            padding-bottom: 5rem;
+            padding-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            background-color: hsl(167, 44%, 70%);
+            
+            .logo {
+                width: 170px;
+                color: $Dark_desaturated_cyan;
+                fill: $Dark_desaturated_cyan;
+                margin-bottom: 2.5rem;
+            }
+            .nav_butt {
+                margin-bottom: 5.5rem;
+                // padding: 0 2.375rem;
+                ul {
+                    display: flex;
+                    li {
+                        list-style: none;
+                        a {
+                            font-size: 1rem;
+                            font-family: 'Barlow', sans-serif;
+                            text-decoration: none;
+                            color: $Dark_moderate_cyan;
+                        }
+                        .services {
+                            padding: 0 3rem;
+                        }
+                    }
+                }
+            }
+            .sosmed {
+                padding: 0 400px;
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
         .home {
             .navbar {
                 padding: 0;
