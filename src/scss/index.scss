@@ -459,13 +459,15 @@ a {
             }
         }
         .wrap_graphicnphoto {
+            width: 100%;
             flex-direction: row;
             .graphicnphoto {
+                width: 100%;
                 .imgM {
                     display: none;
                 }
                 .imgD {
-                    display: flex;
+                    display: block;
                     width: 100%;
                 }
                 .isi_graphicnphoto {
@@ -557,6 +559,49 @@ a {
                 max-width: 100%;
             }
         }
+        .footer {
+            padding-bottom: 5rem;
+            padding-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            background-color: hsl(167, 44%, 70%);
+            
+            .logo {
+                width: 170px;
+                color: $Dark_desaturated_cyan;
+                fill: $Dark_desaturated_cyan;
+                margin-bottom: 2.5rem;
+            }
+            .nav_butt {
+                margin-bottom: 5.5rem;
+                // padding: 0 2.375rem;
+                ul {
+                    display: flex;
+                    li {
+                        list-style: none;
+                        a {
+                            font-size: 1rem;
+                            font-family: 'Barlow', sans-serif;
+                            text-decoration: none;
+                            color: $Dark_moderate_cyan;
+                        }
+                        .services {
+                            padding: 0 3rem;
+                        }
+                    }
+                }
+            }
+            .sosmed {
+                padding: 0 638px;
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
     }
     
 }

@@ -598,18 +598,20 @@ a {
     left: 9.5rem;
   }
   .container .wrap_graphicnphoto {
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .container .wrap_graphicnphoto .graphicnphoto {
+    width: 100%;
+  }
   .container .wrap_graphicnphoto .graphicnphoto .imgM {
     display: none;
   }
   .container .wrap_graphicnphoto .graphicnphoto .imgD {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     width: 100%;
   }
   .container .wrap_graphicnphoto .graphicnphoto .isi_graphicnphoto {
@@ -716,6 +718,58 @@ a {
   .container .gallery .imgD {
     display: block;
     max-width: 100%;
+  }
+  .container .footer {
+    padding-bottom: 5rem;
+    padding-top: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #91d4c6;
+  }
+  .container .footer .logo {
+    width: 170px;
+    color: #25564b;
+    fill: #25564b;
+    margin-bottom: 2.5rem;
+  }
+  .container .footer .nav_butt {
+    margin-bottom: 5.5rem;
+  }
+  .container .footer .nav_butt ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .footer .nav_butt ul li {
+    list-style: none;
+  }
+  .container .footer .nav_butt ul li a {
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: #458c7e;
+  }
+  .container .footer .nav_butt ul li .services {
+    padding: 0 3rem;
+  }
+  .container .footer .sosmed {
+    padding: 0 638px;
+    cursor: pointer;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=index.css.map */
