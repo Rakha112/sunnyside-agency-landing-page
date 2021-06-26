@@ -11,7 +11,7 @@ const More = (props) => {
                         <div className="isi_more">
                             <h2>{data_More.h2}</h2>
                             <p>{data_More.p}</p>
-                            <a href="#aa">LEARN MORE</a>
+                            <a href="#">LEARN MORE</a>
                             <div className={data_More.id}></div>
                         </div>
                     </div>

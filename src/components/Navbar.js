@@ -12,10 +12,10 @@ const Navbar = () => {
                     <img className="logo" src={logo} alt="" />
                     <ul className={isAktif ? "aktif" : ""}>
                         <div id="arrow-left"></div>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li className="li_con"><a href="#contact" className="contact">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li className="li_con"><a href="#" className="contact">Contact</a></li>
                     </ul>
                     <img className="ham" onClick={() => setisAktif(!isAktif)} src={ham} alt="" />
                 </div>   
